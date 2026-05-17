@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --neon: #39ff14;
+    --dark: #111;
+    --dark-gray: #1a1a1a;
+    --mid-gray: #2a2a2a;
+}
+
+/* ── Base ── */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark);
+    color: #eee;
+}
+header{
+    text-align: center;
+}
+h1, h2, h3, h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+/* ── Navbar ── */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0));
+    box-sizing: border-box;
+}
+
+.navbar .logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: var(--neon);
+    border: 2px solid var(--neon);
+    border-radius: 8px;
+    padding: 0.2rem 1rem;
+}
+.UpplusyngaDalkar .grid div{
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 1em
+}
+.navbar ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul a {
+    color: white;
+    font-weight: 700;
+    transition: color 0.2s;
+}
+
+.navbar ul a:hover {
+    color: var(--neon);
+}
+
+/* ── Header / Hero ── */
+header {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+
+header picture {
+    display: block;
+    width: 100%;
+}
+
+header picture img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    width: 90%;
+}
+
+.hero-text h1 {
+    font-size: clamp(2rem, 6vw, 5rem);
+    color: white;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.8);
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 2rem;
+}
+
+/* ── Neon button ── */
+.btn-neon {
+    display: inline-block;
+    background-color: var(--neon);
+    color: black !important;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    padding: 0.6rem 2rem;
+    border-radius: 6px;
+    transition: background-color 0.2s, transform 0.1s;
+    letter-spacing: 0.05em;
+}
+
+.btn-neon:hover {
+    background-color: #2de010;
+    transform: scale(1.04);
+}
+
+/* ── Sections ── */
+.section {
+    padding: 4rem 0;
+}
+
+.dark-section {
+    background-color: var(--dark-gray);
+}
+
+/* ── Grid helpers ── */
+.two-col {
+    grid-template-columns: 1fr 1fr !important;
+}
+
+.three-col {
+    grid-template-columns: 1fr 1fr 1fr !important;
+}
+
+/* ── Service cards ── */
+.service-card {
+    background-color: var(--mid-gray);
+    border-radius: 10px;
+    padding: 1.5rem;
+    border-left: 4px solid var(--neon);
+}
+
+.service-card h3 {
+    color: var(--neon);
+    margin-bottom: 0.5rem;
+}
+
+/* ── Price cards ── */
+.price-card {
+    background-color: var(--mid-gray);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-card.featured {
+    border: 2px solid var(--neon);
+    transform: scale(1.04);
+}
+
+.price-card h3 {
+    font-size: 2rem;
+    color: white;
+}
+
+.price-card .price {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: var(--neon);
+    margin: 0.5rem 0 1rem;
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    width: 100%;
+}
+
+.price-card ul li::before {
+    content: "✓ ";
+    color: var(--neon);
+}
+
+/* ── Promo box ── */
+.promo-box {
+    background-color: var(--mid-gray);
+    border: 2px solid var(--neon);
+    border-radius: 12px;
+    padding: 3rem;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.promo-box h3 {
+    font-size: 2rem;
+    color: var(--neon);
+}
+
+/* ── Table ── */
+table {
+    width: 100%;
+}
+
+th {
+    color: var(--neon);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+}
+
+/* ── Footer ── */
+.site-footer {
+    background-color: #000;
+    padding: 3rem 0 1rem;
+    color: #aaa;
+}
+
+.site-footer h4 {
+    color: var(--neon);
+}
+
+.site-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.site-footer ul li a {
+    color: #aaa;
+    transition: color 0.2s;
+}
+
+.site-footer ul li a:hover {
+    color: var(--neon);
+}
+
+.footer-copy {
+    text-align: center;
+    color: #555;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+}
+
+/* ── Hamburger button ── */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: 2px solid var(--neon);
+    border-radius: 6px;
+    color: var(--neon);
+    font-size: 1.4rem;
+    line-height: 1;
+    padding: 0.2rem 0.6rem;
+    cursor: pointer;
+}
+
+/* ── Responsive ── */
+@media (max-width: 820px) {
+    .two-col,
+    .three-col {
+        grid-template-columns: 1fr !important;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        align-items: center;
+        background: rgba(0,0,0,0.95);
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+    }
+
+    .navbar ul.open {
+        max-height: 500px;
+        opacity: 1;
+        padding: 0.5rem 0 1rem;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+        padding: 0.6rem 0;
+        border-top: 1px solid #222;
+    }
+
+    .price-card.featured {
+        transform: none;
+    }
+}
