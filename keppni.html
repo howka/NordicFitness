@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="is">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Keppni &amp; Gjafaleikur – Nordic Fitness</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.slate.min.css">
+        <link rel="stylesheet" href="Css/Custom.css">
+        <link rel="stylesheet" href="Css/form.css">
+        <link rel="stylesheet" href="Css/IconmoonFont.css">
+    </head>
+    <body>
+
+        <!-- VALMYND -->
+        <header>
+            <nav class="navbar">
+                <a href="index.html" class="logo">Nordic Fitness <span class="icon-steam"></span></a>
+                <button class="menu-toggle" aria-label="Valmynd" onclick="this.nextElementSibling.classList.toggle('open')">&#9776;</button>
+                <ul>
+                    <li><a href="index.html#um-okkur">Um okkur</a></li>
+                    <li><a href="index.html#þjonusta">Þjónusta</a></li>
+                    <li><a href="index.html#stundatafla">Stundatafla</a></li>
+                    <li><a href="index.html#adild">Aðild</a></li>
+                    <li><a href="keppni.html" style="color:var(--neon);">Keppni</a></li>
+                    <li><a href="index.html#samband">Hafa samband</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- GJAFALEIKUR HERO -->
+        <section class="section dark-section" style="padding-top:8rem;">
+            <div class="container" style="text-align:center;">
+                <h1 style="font-size:clamp(2.5rem,7vw,5rem); color:var(--neon);">Sumarfitnessvígi</h1>
+                <p style="font-size:1.2rem; color:#ccc; max-width:600px; margin:1rem auto 0;">
+                    Taktu þátt í sumaráskoruninni okkar og fáðu tækifæri til að vinna <strong style="color:white;">3 mánuði ókeypis</strong> aðild hjá Nordic Fitness!
+                </p>
+            </div>
+        </section>
+
+        <!-- REGLUR -->
+        <section class="section">
+            <div class="container">
+                <h2>Hvernig tekur þú þátt?</h2>
+                <div class="grid three-col" style="margin-top:2rem;">
+                    <div class="service-card">
+                        <h3>1. Skráðu þig</h3>
+                        <p>Fylltu út þátttökueyðublaðið hér að neðan með nafni og netfangi.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>2. Ljúktu áskoruninni</h3>
+                        <p>Mæt í þjálfun 3 sinnum í viku í 4 vikur á sumrin og skráðu þjálfunina þína.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>3. Vinndu verðlaun</h3>
+                        <p>Sá sem klárar áskorunina fær tækifæri til að vinna 3 mánuði ókeypis aðild.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VERÐLAUN -->
+        <section class="section dark-section">
+            <div class="container">
+                <h2>Verðlaun</h2>
+                <div class="grid two-col" style="margin-top:2rem;">
+                    <div class="promo-box">
+                        <h3>1. verðlaun</h3>
+                        <p style="font-size:1.1rem;">3 mánuðir ókeypis Premium aðild</p>
+                        <p style="color:#aaa; margin-top:0.5rem;">Verðmæti: 44.970 kr</p>
+                    </div>
+                    <div class="promo-box" style="border-color:#555;">
+                        <h3 style="color:#eee;">2. verðlaun</h3>
+                        <p style="font-size:1.1rem;">Fyrsta vikan ókeypis + þjálfunarpokar</p>
+                        <p style="color:#aaa; margin-top:0.5rem;">Opið fyrir alla nýja meðlimi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ÞÁTTTÖKUEYÐUBLAÐ -->
+        <section class="section" id="thatttaka">
+            <div class="container">
+                <h2>Skráðu þig í keppnina</h2>
+                <p>Fylltu út eyðublaðið og við staðfestum þátttöku þína með tölvupósti.</p>
+
+                <form method="post" action="#" style="max-width:580px; margin-top:2rem;">
+                    <fieldset>
+                        <label>
+                            Nafn
+                            <input type="text" name="nafn" placeholder="Fullt nafn" autocomplete="name" required>
+                        </label>
+                        <label>
+                            Netfang
+                            <input type="email" name="netfang" placeholder="netfang@dæmi.is" autocomplete="email" required>
+                        </label>
+                        <label>
+                            Símanúmer
+                            <input type="tel" name="simi" placeholder="000-0000" autocomplete="tel">
+                        </label>
+                        <label>
+                            Ertu nú þegar meðlimur?
+                            <select name="meðlimur">
+                                <option value="nei">Nei – ég er nýr</option>
+                                <option value="ja-nemandi">Já – Nemanda aðild</option>
+                                <option value="ja-venjuleg">Já – Venjuleg aðild</option>
+                                <option value="ja-premium">Já – Premium aðild</option>
+                            </select>
+                        </label>
+                        <label>
+                            Hvers vegna viltu vinna?
+                            <textarea name="ástæða" placeholder="Segðu okkur hvers vegna þú átt að vinna..." rows="4"></textarea>
+                        </label>
+                    </fieldset>
+                    <input type="submit" value="Skrá mig í keppnina" class="shake-lr btn-neon" style="cursor:pointer; border:none; width:100%; font-size:1.1rem; padding:0.8rem;">
+                </form>
+            </div>
+        </section>
+
+        <!-- FÓTUR -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="grid three-col">
+                    <div>
+                        <h4>Nordic Fitness</h4>
+                        <p>Nútímaleg líkamsræktarstöð í hjarta Reykjavíkur.</p>
+                    </div>
+                    <div>
+                        <h4>Tenglar</h4>
+                        <ul>
+                            <li><a href="index.html#um-okkur">Um okkur</a></li>
+                            <li><a href="index.html#þjonusta">Þjónusta</a></li>
+                            <li><a href="index.html#stundatafla">Stundatafla</a></li>
+                            <li><a href="index.html#adild">Aðild</a></li>
+                            <li><a href="keppni.html">Keppni</a></li>
+                            <li><a href="index.html#samband">Hafa samband</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Hafðu samband</h4>
+                        <p>Laugavegur 42<br>101 Reykjavík</p>
+                        <p>nordicfitness@dæmi.is<br>Tel: 555-1234</p>
+                    </div>
+                </div>
+                <p class="footer-copy">&copy; 2026 Nordic Fitness. Öll réttindi áskilin.</p>
+            </div>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="is">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nordic Fitness</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.slate.min.css">
+        <link rel="stylesheet" href="Css/Custom.css">
+        <link rel="stylesheet" href="Css/form.css">
+        <link rel="stylesheet" href="Css/IconmoonFont.css">
+    </head>
+    <body>
+
+        <!-- HAUS / VALMYND -->
+        <header>
+            <nav class="navbar">
+                
+                <a href="#forsida" class="logo">Nordic Fitness <span class="icon-steam"></span></a>
+                <button class="menu-toggle" aria-label="Valmynd" onclick="this.nextElementSibling.classList.toggle('open')">&#9776;</button>
+                <ul>
+                    <li><a href="#um-okkur">Um okkur</a></li>
+                    <li><a href="#þjonusta">Þjónusta</a></li>
+                    <li><a href="#stundatafla">Stundatafla</a></li>
+                    <li><a href="#adild">Aðild</a></li>
+                    <li><a href="keppni.html">Keppni</a></li>
+                    <li><a href="#samband">Hafa samband</a></li>
+                </ul>
+            </nav>
+
+            <!-- HETJUMYND -->
+            <picture>
+                <source media="(min-width:2000px)" srcset="Images/Header_logo_4K_3840x2160.png">
+                <source media="(min-width:1930px)" srcset="Images/Header_logo_1930.png">
+                <source media="(min-width:1280px)" srcset="Images/Header_logo_1080.png">
+                <source media="(min-width:960px)"  srcset="Images/Header_logo_960.png">
+                <source media="(min-width:768px)"  srcset="Images/Header_logo_768.png">
+                <img src="Images/Header_logo_480.png" alt="Nordic Fitness mynd" width="480">
+            </picture>
+
+            <div class="hero-text" id="forsida">
+                <h1>Þjálfaðu þig hjá Nordic Fitness</h1>
+                <p>Nútímaleg tæki og faglegir þjálfarar bíða þín.</p>
+                <a href="#adild" class="btn-neon">Skráðu þig núna</a>
+            </div>
+        </header>
+
+        <!-- UM OKKUR -->
+        <section class="section dark-section" id="um-okkur">
+            <div class="container">
+                <h2>Um okkur</h2>
+                <p>Nordic Fitness er nútímaleg líkamsræktarstöð sem leggur áherslu á heilsu, líðan og frammistöðu. Við bjóðum upp á vandverk tæki, fagleg þjálfun og hlýlegt andrúmsloft fyrir alla.</p>
+
+                <div class="grid three-col" style="margin-top:2rem;">
+                    <div class="service-card">
+                        <h3>Faglegir þjálfarar</h3>
+                        <p>Teymið okkar samanstendur af löggildum þjálfurum með reynslu í styrktarþjálfun, hópaþjálfun og næringarfræði.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Opnunartímar</h3>
+                        <p>
+                            Mánudagur – Föstudagur: 06:00 – 22:00<br>
+                            Laugardagur: 08:00 – 20:00<br>
+                            Sunnudagur: 10:00 – 18:00
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Staðsetning</h3>
+                        <p>Laugavegur 42, 101 Reykjavík.<br>Auðveld bílastæði og góð samgöngur í nágrenninu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ÞJÓNUSTA -->
+        <section class="section" id="þjonusta">
+            <div class="container">
+                <h2>Þjónusta</h2>
+                <div class="grid three-col" style="margin-top:2rem;">
+                    <div class="service-card">
+                        <h3>Einkaþjálfun</h3>
+                        <p>Fáðu sérsniðna þjálfunaráætlun og persónulegt eftirlit frá faglegum þjálfara.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Hópaþjálfun</h3>
+                        <p>Þjálfaðu þig í hóp og njóttu samfélagsins. Við bjóðum upp á marga mismunandi tíma vikulega.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Jógatímar</h3>
+                        <p>Slakaðu á líkama og huga með reglulegu jóga – opið fyrir alla reynslustiga.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Gufubað</h3>
+                        <p>Njóttu slökunar í gufubaðinu okkar eftir erfiða þjálfun. Innifalið í Premium aðild.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Næringarráðgjöf</h3>
+                        <p>Fáðu ráðleggingar frá löggiltum næringarfræðingi til að ná markmiðum þínum hraðar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STUNDATAFLA -->
+        <section class="section dark-section" id="stundatafla">
+            <div class="container">
+                <h2>Stundatafla</h2>
+                <div style="overflow-x:auto; margin-top:2rem;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dagur</th>
+                                <th>Tími</th>
+                                <th>Klukkan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mánudagur</td>
+                                <td>HIIT</td>
+                                <td>18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Þriðjudagur</td>
+                                <td>Jóga</td>
+                                <td>17:00</td>
+                            </tr>
+                            <tr>
+                                <td>Miðvikudagur</td>
+                                <td>Box</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <td>Fimmtudagur</td>
+                                <td>Styrktarþjálfun</td>
+                                <td>18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Föstudagur</td>
+                                <td>Hjartaþjálfun</td>
+                                <td>16:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- VERÐ Á AÐILD -->
+        <section class="section" id="adild">
+            <div class="container">
+                <h2>Verð á aðild</h2>
+                <div class="grid three-col" style="margin-top:2rem;">
+
+                    <div class="price-card">
+                        <h3>Nemandi</h3>
+                        <div class="price">5.990 kr</div>
+                        <ul>
+                            <li>Aðgangur að sal</li>
+                            <li>Hópatímar</li>
+                            <li>Skápaleiga</li>
+                        </ul>
+                        <a href="#samband" class="btn-neon">Kaupa aðild</a>
+                    </div>
+
+                    <div class="price-card featured">
+                        <h3>Venjuleg</h3>
+                        <div class="price">9.990 kr</div>
+                        <ul>
+                            <li>Aðgangur að sal</li>
+                            <li>Hópatímar</li>
+                            <li>Skápaleiga</li>
+                            <li>Næringarráðgjöf</li>
+                        </ul>
+                        <a href="#samband" class="btn-neon">Kaupa aðild</a>
+                    </div>
+
+                    <div class="price-card">
+                        <h3>Premium</h3>
+                        <div class="price">14.990 kr</div>
+                        <ul>
+                            <li>Aðgangur að sal</li>
+                            <li>Hópatímar</li>
+                            <li>Skápaleiga</li>
+                            <li>Næringarráðgjöf</li>
+                            <li>Gufubað</li>
+                            <li>Einkaþjálfun (1x/mán)</li>
+                        </ul>
+                        <a href="#samband" class="btn-neon">Kaupa aðild</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- KEPPNI / GJAFALEIKUR -->
+        <section class="section dark-section" id="keppni">
+            <div class="container">
+                <h2>Keppni &amp; Gjafaleikur</h2>
+                <div class="promo-box">
+                    <h3>Sumarfitnessvígi</h3>
+                    <p>Taktu þátt í sumaráskoruninni okkar og fáðu tækifæri til að vinna <strong>3 mánuði ókeypis</strong> aðild!</p>
+                    <p style="margin-top:1rem; color:#aaa;">Fyrsta vikan ókeypis fyrir alla nýja meðlimi. Engin skuldbinding.</p>
+                    <a href="#samband" class="btn-neon" style="margin-top:1.5rem; display:inline-block;">Skráðu þig núna</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SAMSKIPTAEYÐUBLAÐ -->
+        <section class="section" id="samband">
+            <div class="container">
+                <h2>Hafa samband</h2>
+                <p>Fylltu út eyðublaðið og við höfum samband við þig fljótlega.</p>
+
+                <form method="post" action="#" style="max-width:640px; margin-top:2rem;">
+                    <fieldset>
+                        <label>
+                            Nafn
+                            <input type="text" name="nafn" placeholder="Fullt nafn" autocomplete="name" required>
+                        </label>
+                        <label>
+                            Netfang
+                            <input type="email" name="netfang" placeholder="netfang@dæmi.is" autocomplete="email" required>
+                        </label>
+                        <label>
+                            Símanúmer
+                            <input type="tel" name="simi" placeholder="000-0000" autocomplete="tel">
+                        </label>
+                        <label>
+                            Tegund aðildar
+                            <select name="adild">
+                                <option value="">Veldu aðild...</option>
+                                <option value="nemandi">Nemandi – 5.990 kr</option>
+                                <option value="venjuleg">Venjuleg – 9.990 kr</option>
+                                <option value="premium">Premium – 14.990 kr</option>
+                            </select>
+                        </label>
+                        <label>
+                            Skilaboð
+                            <textarea name="skilaboð" placeholder="Skrifaðu skilaboð hér..." rows="5"></textarea>
+                        </label>
+                    </fieldset>
+                    <input type="submit" value="Senda" class="shake-lr btn-neon" style="cursor:pointer; border:none; width:100%; font-size:1.1rem; padding:0.8rem;">
+                </form>
+            </div>
+        </section>
+        <!-- FÓTUR -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="grid three-col">
+                    <div>
+                        <h4>Nordic Fitness</h4>
+                        <p>Nútímaleg líkamsræktarstöð í hjarta Reykjavíkur.</p>
+                    </div>
+                    <div>
+                        <h4>Tenglar</h4>
+                        <ul>
+                            <li><a href="#um-okkur">Um okkur</a></li>
+                            <li><a href="#þjonusta">Þjónusta</a></li>
+                            <li><a href="#stundatafla">Stundatafla</a></li>
+                            <li><a href="#adild">Aðild</a></li>
+                            <li><a href="#keppni">Keppni</a></li>
+                            <li><a href="#samband">Hafa samband</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Hafðu samband</h4>
+                        <p>Laugavegur 42<br>101 Reykjavík</p>
+                        <p>nordicfitness@dæmi.is<br>Tel: 555-1234</p>
+                    </div>
+                </div>
+                <p class="footer-copy">&copy; 2026 Nordic Fitness. Öll réttindi áskilin.</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
